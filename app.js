@@ -4,7 +4,16 @@ const result = document.getElementById('result');
 const submitBtn = document.getElementById('submitBtn');
 const resultado = document.getElementById('resultado');
 const btnClaro = document.getElementById('btn-claro');
-const btnOscuro = document.getElementById('btn-oscuro')
+const btnOscuro = document.getElementById('btn-oscuro');
+const btnReset = document.getElementById('resetBtn');
+
+btnReset.addEventListener('click', () => {
+    inputPeso.value = '';
+    inputEstatura.value = '';
+    result.value = '';
+    resultado.textContent = '';
+})
+    
 
 btnClaro.addEventListener('click', () => {
     document.body.classList.add('fondo-blanco');
