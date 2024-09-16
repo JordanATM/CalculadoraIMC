@@ -33,7 +33,7 @@ submitBtn.addEventListener('click', () => {
 
     // Validar que los campos no esten vacios
     if( isNaN(peso) || isNaN(estatura)){
-        resultado.textContent = "Por favor, ingresa valores válidos para el peso y la estatura.";
+        resultado.textContent = alert("Por favor, ingresa valores válidos para el peso y la estatura.");
         return;
     }
 
